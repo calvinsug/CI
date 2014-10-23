@@ -1,15 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html>
 	<head>
-		<link href="CSS/style.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo base_url().'assets/css/style.css' ?>" rel="stylesheet" type="text/css" />
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 		<meta charset="utf-8">
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
-		<script src="library/jquery-2.1.1.js"></script>
+		<script src="<?php echo base_url().'assets/library/jquery-2.1.1.js'?>"></script>
 	
 <script>
 
-$( document ).ready(function() {
+$(document).ready(function(){
  	$('#formRegis').submit(function(e){
  		console.log(e);
  		e.preventDefault();

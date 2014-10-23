@@ -1,0 +1,154 @@
+#container
+{
+	width:1120px;
+	height:auto;
+	margin:0 auto;
+}
+			
+#header
+{
+	width:auto;
+	display:inline
+}
+			
+.menuheader
+{
+	float:right;
+	font:normal 18px Calibri,Sans-Serif;
+}
+			
+.submenuheader
+{
+	margin-right:20px;
+	margin-left:20px;
+}
+			
+.menubar
+{	
+	font:normal 18px Calibri,Sans-Serif;
+	background-color: #f7f7f7;
+	border:1px solid #d8d5d5;
+}
+			
+.menubar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.menubar li {
+	float: left;
+	padding:10px 20px;
+}
+
+.menubar a {
+	color:black;
+	display: block;
+	text-decoration:none;
+}
+
+.menubar a:hover
+{
+	color:red;
+}
+			
+.search
+{
+	float:right;
+	margin-top:-35px;
+	margin-right:5px;
+}
+			
+#content
+{
+	width:auto;
+	height:auto;
+}
+			
+.news
+{
+	width:auto;
+	height:200px;
+	border-bottom:1px solid #d8d5d5;
+	font:normal 16px Calibri,Sans-Serif;
+}
+			
+.newstext
+{
+	width:auto;
+	height:100px;
+	word-break: break-all;
+	overflow:hidden;
+}
+			
+.newspicture
+{
+	float:left;
+	vertical-align: text-top;
+}
+
+.form
+{
+	width:600px;
+	background-color: #f7f7f7;
+	border:1px solid #d8d5d5;
+	margin:50px auto;
+}
+
+.field
+{
+	width:300px;
+	margin:0 auto;
+	margin-bottom:10px;
+	font:normal 16px Calibri,Sans-Serif;
+}
+
+.textbox
+{
+	float:right;
+}
+
+.submit
+{
+	width:150px;
+	margin:0 auto;
+}
+
+.sizesubmit
+{
+	width:150px;
+}	
+
+#map-canvas {
+	width:500px;
+	height:500px;
+	margin:0 auto;
+	padding: 0px;
+}
+	
+#footer
+{
+	width:auto;
+	height:auto;
+	text-align:center;
+	font:normal 18px Calibri,Sans-Serif;
+	margin-top:100px;
+}
+			
+.widget
+{
+	width:500px;
+	height:auto;
+	border-bottom:1px solid #d8d5d5;
+	margin:0 auto;
+	text-transform:uppercase;
+}
+			
+.clear
+{
+	clear:both;
+	padding:0;
+	margin:0;
+	border:none;
+}

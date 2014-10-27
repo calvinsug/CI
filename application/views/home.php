@@ -2,39 +2,42 @@
 <html>
 	<head>
 		<link href="<?php echo base_url().'assets/css/style.css' ?>" rel="stylesheet" type="text/css" />
-		<link href="<?php echo base_url().'assets/css/slider.css'?>" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="<?php echo base_url().'assets/css/animation.css'?>"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	    <script src="<?php echo base_url().'assets/library/filejavascript.js'?>"></script>
 	</head>
-	<body>
+	<body onload="initialize(-6.875046,107.614174)">
 		<div id="container">
-			<div id="header">
-				<img src="<?php echo base_url().'assets/images/Myhome.jpg'?>"/>
-				<div class="menuheader">
-					<span class="submenuheader">
-						<span><img src="<?php echo base_url().'assets/images/englishflag.jpg'?>"/></span>
-						<span>ENG</span>
-					</span>
-					<span class="submenuheader">
-						<span><img src="<?php echo base_url().'assets/images/indonesiaflag.jpg'?>"/></span>
-						<span>IND</span>
-					</span>
-					<span class="submenuheader">
-						<span><a href="<?php echo base_url()."index.php/controller1/login"; ?> ">Sign In</a></span>
-					</span>|
-					<span class="submenuheader">
-						<span><a href="<?php echo base_url()."index.php/controller1/register"; ?> ">Register</a></span>
-					</span>
+			<div id="headerbg">
+				<div id="header">
+					<img src="<?php echo base_url().'assets/images/Myhome.png'?>"/>
+					<div class="menuheader">
+						<span class="submenuheader">
+							<span><img src="<?php echo base_url().'assets/images/englishflag.jpg'?>"/></span>
+							<span>ENG</span>
+						</span>
+						<span class="submenuheader">
+							<span><img src="<?php echo base_url().'assets/images/indonesiaflag.jpg'?>"/></span>
+							<span>IND</span>
+						</span>
+						<span class="submenuheader">
+							<span><a href="<?php echo base_url()."index.php/controller1/login"; ?> ">Sign In</a></span>
+						</span>
+						<span class="submenuheader">|</span>
+						<span class="submenuheader">
+							<span><a href="<?php echo base_url()."index.php/controller1/register"; ?> ">Register</a></span>
+						</span>
+					</div>
 				</div>
 			</div>
 			<div class="clear"></div>
-			<br/><br/>
 			<div class="menubar">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="<?php echo base_url()."index.php/controller1/index"; ?>" class="menulink">Home</a></li>
 					<li><a href="#">List Events</a></li>
 					<li><a href="#">Testimony</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="<?php echo base_url()."index.php/controller1/about"; ?>">About Us</a></li>
+					<li><a href="<?php echo base_url()."index.php/controller1/contact"; ?>">Contact Us</a></li>
 				</ul>
 				<div class="search">
 					<input type="text" name="search"/>
@@ -44,45 +47,8 @@
 			<div class="clear"></div>
 			<br/><br/>
 			<div id="content">
-				<div class="containerslide">
-                    <div id="content-slider">
-                        <div id="slider">
-                            <div id="mask">
-                            <ul>
-                            <li id="first" class="firstanimation">
-                            <a href="#">
-                            <img class="img" src="<?php echo base_url().'assets/images/imageslide/Myhome1.jpg' ?>" alt="Cougar"/>
-                            </a>
-                            </li>
-                
-                            <li id="second" class="secondanimation">
-                            <a href="#">
-                            <img class="img" src="<?php echo base_url().'assets/images/imageslide/Myhome2.jpg' ?>" alt="Lions"/>
-                            </a>
-                            </li>
-                            
-                            <li id="third" class="thirdanimation">
-                            <a href="#">
-                            <img class="img" src="<?php echo base_url().'assets/images/imageslide/Myhome3.jpg' ?>" alt="Snowalker"/>
-                            </a>
-                            </li>
-                                        
-                            <li id="fourth" class="fourthanimation">
-                            <a href="#">
-                            <img class="img" src="<?php echo base_url().'assets/images/imageslide/Myhome4.jpg' ?>" alt="Howling"/>
-                            </a>
-                            </li>
-                                        
-                            <li id="fifth" class="fifthanimation">
-                            <a href="#">
-                            <img class="img" src="<?php echo base_url().'assets/images/imageslide/Myhome5.jpg' ?>" alt="Sunbathing"/>
-                            </a>
-                            </li>
-                            </ul>
-                            </div>
-                            <div class="progress-bar"></div>
-                        </div>
-                    </div>
+				<div class="containermap">
+                    <div id="map-canvas" style="width: 1050px; height: 450px"></div>
                 </div>
 				<div class="clear"></div>
 				<br/><br/>
@@ -139,10 +105,11 @@
 			</div>
 			<div id="footer">
 				<div class="widget">
-					<img src="<?php echo base_url().'assets/images/facebook.jpg'?>"/>
-					<img src="<?php echo base_url().'assets/images/twitter.jpg'?>"/>
+					<span class="txtwidget">Stay Connect With Us At</span>
+					<img src="<?php echo base_url().'assets/images/facebook.png'?>"/>
+					<img src="<?php echo base_url().'assets/images/twitter.png'?>"/>
 				</div>
-				<div>© 2014 MyHomeIndonesia Rights Reserved</div>
+				<div>&copy; 2014 MyHomeIndonesia Rights Reserved</div>
 			</div>
 		</div>
 	</body>

@@ -5,34 +5,36 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="header">
-				<img src="assets/images/Myhome.jpg"/>
-				<div class="menuheader">
-					<span class="submenuheader">
-						<span><img src="englishflag.jpg"/></span>
-						<span>ENG</span>
-					</span>
-					<span class="submenuheader">
-						<span><img src="indonesiaflag.jpg"/></span>
-						<span>IND</span>
-					</span>
-					<span class="submenuheader">
-						<span><a href="login.html">Sign In</a></span>
-					</span>|
-					<span class="submenuheader">
-						<span><a href="register.html">Register</a></span>
-					</span>
+			<div id="headerbg">
+				<div id="header">
+					<img src="<?php echo base_url().'assets/images/Myhome.png'?>"/>
+					<div class="menuheader">
+						<span class="submenuheader">
+							<span><img src="<?php echo base_url().'assets/images/englishflag.jpg'?>"/></span>
+							<span>ENG</span>
+						</span>
+						<span class="submenuheader">
+							<span><img src="<?php echo base_url().'assets/images/indonesiaflag.jpg'?>"/></span>
+							<span>IND</span>
+						</span>
+						<span class="submenuheader">
+							<span><a href="<?php echo base_url()."index.php/controller1/login"; ?> ">Sign In</a></span>
+						</span>
+						<span class="submenuheader">|</span>
+						<span class="submenuheader">
+							<span><a href="<?php echo base_url()."index.php/controller1/register"; ?> ">Register</a></span>
+						</span>
+					</div>
 				</div>
 			</div>
 			<div class="clear"></div>
-			<br/><br/>
 			<div class="menubar">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="<?php echo base_url()."index.php/controller1/index"; ?>">Home</a></li>
 					<li><a href="#">List Events</a></li>
 					<li><a href="#">Testimony</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="<?php echo base_url()."index.php/controller1/about"; ?>">About Us</a></li>
+					<li><a href="<?php echo base_url()."index.php/controller1/contact"; ?>">Contact Us</a></li>
 				</ul>
 				<div class="search">
 					<input type="text" name="search"/>
@@ -63,14 +65,15 @@
 						</div>
 						<br/><br/>
 					</form>
+					<br/>
 				</div>
 			</div>
 			<div id="footer">
 				<div class="widget">
-					<img src="facebook.jpg"/>
-					<img src="twitter.jpg"/>
+					<img src="<?php echo base_url().'assets/images/facebook.png'?>"/>
+					<img src="<?php echo base_url().'assets/images/twitter.png'?>"/>
 				</div>
-				<div>© 2014 MyHomeIndonesia Rights Reserved</div>
+				<div>&copy; 2014 MyHomeIndonesia Rights Reserved</div>
 			</div>
 		</div>
 	</body>

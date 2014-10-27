@@ -10,9 +10,9 @@ function initialize(lt,lg) {
 	});
     console.log(map);
 	infoWindow = new google.maps.InfoWindow();
-	createMarker(-6.875046, 107.614174,'Tempat A','images/letter_a.png');
-	createMarker(-6.904337, 107.61323,'Tempat B','images/letter_b.png');
-	createMarker(-6.899757, 107.599196,'Tempat C','images/letter_c.png');
+	createMarker(-6.875046, 107.614174,'Tempat A','assets/images/letter_a.png');
+	createMarker(-6.904337, 107.61323,'Tempat B','assets/images/letter_b.png');
+	createMarker(-6.899757, 107.599196,'Tempat C','assets/images/letter_c.png');
 
 	/*google.maps.event.addListener(map, 'click', function(event) {
     	//alert('Point.X.Y: ' + event.latLng.B);

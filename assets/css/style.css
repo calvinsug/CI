@@ -178,11 +178,72 @@ body
 .fieldcontentadmin
 {
 	width: 1085px;
-	height: 300px;
+	height: auto;
 	background: white;
 	margin-left: 220px;
 	margin-bottom: 10px;
-}		
+	display: inline-block;
+	padding-bottom: 30px;
+}
+
+.subheaderadmin
+{
+	width:auto;
+	margin-left:10px;
+	margin-right:10px;
+	font:normal 16px Calibri,Sans-Serif;
+	padding-top: 1px;
+}
+
+.quicklinksadmin
+{
+	width: 100px;
+	padding: 10px 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 20px;
+	word-break: break-all;
+	float: left;
+	border: 1px solid black;
+	font:normal 16px Calibri,Sans-Serif;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.quicklinksadmin,.adminicon a {
+	display: block;
+	text-decoration:none;
+}
+
+.quicklinksadmin,.adminicon  a:hover
+{
+	color:red;
+}
+
+.tableadmin
+{
+	font:normal 16px Calibri,Sans-Serif;
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.colortableheader
+{
+	background: #bdd7ec;
+	font-weight: bold;
+}
+
+.colortablecontent
+{
+	background: #e6e6e6;
+}
+
+.adminicon
+{
+	width:150px;
+	display: inline-block;
+}
 
 #content
 {

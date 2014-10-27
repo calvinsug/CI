@@ -43,10 +43,43 @@ class Controller1 extends CI_Controller {
 		$this->load->view('adoptstreet');
 	}
 
+	public function loginadmin()
+	{
+		$this->load->view('loginadmin');
+	}
+
 	public function homeadmin()
 	{
 		$this->load->view('homeadmin');
 	}
 
+	public function memberadmin()
+	{
+		$this->load->view('memberadmin');
+	}
 
+	public function branchadmin()
+	{
+		$this->load->view('branchadmin');
+	}
+
+	public function eventadmin()
+	{
+		$this->load->view('eventadmin');
+	}
+
+	public function newsadmin()
+	{
+		$this->load->view('newsadmin');
+	}
+
+	public function prayerrequestadmin()
+	{
+		$this->load->view('prayerrequestadmin');
+	}
+	
+	public function testimonyadmin()
+	{
+		$this->load->view('testimonyadmin');
+	}
 }

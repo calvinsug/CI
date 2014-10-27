@@ -34,89 +34,88 @@
 			</div>
 			<div class="clear"></div>
 			<div id="contentadmin">
-				<div class="headercontentadmin">Dashboard</div>
+				<div class="headercontentadmin">Event</div>
 				<div class="clear"></div>
 				<div class="fieldcontentadmin">
 					<div class="subheaderadmin">
-						<h2>Quick Links</h2>
-						<hr/>
-					</div>
-					<div>
-					<div class="quicklinksadmin">
-						<a href="<?php echo base_url()."index.php/controller1/homeadmin"; ?>" class="menulink">
-							<img src="<?php echo base_url().'assets/images/neweventicon.png'?>"/>
-							New Event
-						</a>
-					</div>
-					<div class="quicklinksadmin">
-						<a href="<?php echo base_url()."index.php/controller1/homeadmin"; ?>" class="menulink">
-							<img src="<?php echo base_url().'assets/images/createnewsicon.png'?>"/>
-							Create News
-						</a>
-					</div>
-					<div class="quicklinksadmin">
-						<a href="<?php echo base_url()."index.php/controller1/homeadmin"; ?>" class="menulink">
-							<img src="<?php echo base_url().'assets/images/newbranchicon.png'?>"/>
-							New Branch
-						</a>
-					</div>
-					<div class="quicklinksadmin">
-						<a href="<?php echo base_url()."index.php/controller1/homeadmin"; ?>" class="menulink">
-							<img src="<?php echo base_url().'assets/images/confirmationpaymenticon.png'?>"/>
-							Confirmation<br/>Payment
-						</a>
-					</div>
-					<div class="quicklinksadmin">
-						<a href="<?php echo base_url()."index.php/controller1/homeadmin"; ?>" class="menulink">
-							<img src="<?php echo base_url().'assets/images/confirmationprayericon.png'?>"/>
-							Confirmation<br/>Prayer Request
-						</a>
-					</div>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<br/>
-				<div class="fieldcontentadmin">
-					<div class="subheaderadmin">
-						<h2>Information</h2>
+						<h2>List Event</h2>
+						<div class="adminicon">
+							<a href="<?php echo base_url()."index.php/controller1/eventadmin"; ?>">
+								<img src="<?php echo base_url().'assets/images/neweventicon2.png'?>"/>
+								Add Event
+							</a>
+						</div>
+						<div class="adminicon">
+							<a href="<?php echo base_url()."index.php/controller1/eventadmin"; ?>">
+								<img src="<?php echo base_url().'assets/images/rundowneventicon.png'?>"/>
+								Rundown
+							</a>
+						</div>
+						<div class="adminicon">
+							<a href="<?php echo base_url()."index.php/controller1/eventadmin"; ?>">
+								<img src="<?php echo base_url().'assets/images/divisioneventicon.png'?>"/>
+								Division
+							</a>
+						</div>
+						<div class="adminicon">
+							<a href="<?php echo base_url()."index.php/controller1/eventadmin"; ?>">
+								<img src="<?php echo base_url().'assets/images/detaildivisioneventicon.png'?>"/>
+								Detail Division
+							</a>
+						</div>
+						<div class="adminicon">
+							<a href="<?php echo base_url()."index.php/controller1/eventadmin"; ?>">
+								<img src="<?php echo base_url().'assets/images/budgeteventicon.png'?>"/>
+								Budget
+							</a>
+						</div>
 						<hr/>
 					</div>
 					<div>
 						<table class="tableadmin">
-							<tr class="colortableheader">
-								<td colspan="2">Data Activity MyHome Indonesia</td>
+							<tr class="colortableheader" align="center">
+								<td>EventID</td>
+								<td>EventTitle</td>
+								<td>EventType</td>
+								<td>EventDesc</td>
+								<td>StartDate</td>
+								<td>EndDate</td>
+								<td>PaymentType</td>
+								<td>RegisterFee</td>
+								<td>Update Event</td>
 							</tr>
-							<tr>
+							<tr align="center">
 								<td>Total Staff</td>
-								<td align="center">500</td>
+								<td>500</td>
+								<td>Total Staff</td>
+								<td>500</td>
+								<td>Total Staff</td>
+								<td>500</td>
+								<td>Update</td>
+								<td>Update</td>
+								<td>Update</td>
 							</tr>
-							<tr class="colortablecontent">
-								<td>Total Member</td>
-								<td align="center">500</td>
+							<tr class="colortablecontent" align="center">
+								<td>Total Staff</td>
+								<td>500</td>
+								<td>Total Staff</td>
+								<td>500</td>
+								<td>Total Staff</td>
+								<td>500</td>
+								<td>Update</td>
+								<td>Update</td>
+								<td>Update</td>
 							</tr>
-							<tr>
-								<td>Total Event Free</td>
-								<td align="center">500</td>
-							</tr>
-							<tr class="colortablecontent">
-								<td>Total Event Paid</td>
-								<td align="center">500</td>
-							</tr>
-							<tr>
-								<td>Total Registration Event</td>
-								<td align="center">500</td>
-							</tr>
-							<tr class="colortablecontent">
-								<td>Total News</td>
-								<td align="center">500</td>
-							</tr>
-							<tr>
-								<td>Total Prayer Request</td>
-								<td align="center">500</td>
-							</tr>
-							<tr class="colortablecontent">
-								<td>Total Testimony</td>
-								<td align="center">500</td>
+							<tr align="center">
+								<td>Total Staff</td>
+								<td>500</td>
+								<td>Total Staff</td>
+								<td>500</td>
+								<td>Total Staff</td>
+								<td>500</td>
+								<td>Update</td>
+								<td>Update</td>
+								<td>Update</td>
 							</tr>
 						</table>
 					</div>

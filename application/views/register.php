@@ -10,14 +10,66 @@
 		<script>
 
 			$( document ).ready(function() {
+			 	
 			 	$('#formRegis').submit(function(e){
 			 		console.log(e);
 			 		e.preventDefault();
 			 	});
+
+			 	$('.btnSubmit').click(function(e){
+			 		e.preventDefault();
+			 			
+			 		//var formData = new FormData();
+			 		var formData = new FormData($('#formRegis'));
+
+			 		console.log(formData);
+			 		/*formData.append("username",$('#idUsername').val());
+			 		formData.append("password",$("input[name='password']").val());*/
+
+			 		/*$.ajax({
+				 		url : "<?php echo base_url().'controller2/RegisterMember/'?>",
+				 		type : "POST",
+				 		//data : JSON.stringify({
+				 		data : formData,
+				 			'username' : $('#idUsername').val()
+
+				 		}),
+				 		//dataType: 'JSON',
+				 		//contentType : 'application/json; charset=utf-8',
+				 		success : function(data){
+				 			console.log(data);
+
+				 		}
+			 		});*/
+
+			 		$.ajax({
+				 		url : "<?php echo base_url().'controller2/RegisterMember/'?>",
+				 		type : "POST",
+				 		//data : JSON.stringify({
+				 		data : {
+				 			username: $('#idUsername').val(), 
+				 			password : $("input[name='password']").val(),
+				 			firstname : $("input[name='firstname']").val(),
+				 			lastname : $("input[name='lastname']").val(),
+				 			email : $("input[name='email']").val(),
+				 			phone : $("input[name='phone']").val()
+				 		},
+				 		//dataType: 'JSON',
+				 		//contentType : 'application/json; charset=utf-8',
+				 		success : function(data){
+				 			console.log(data);
+				 		}
+			 		});
+
+			 		/*$.post("<?php echo base_url().'controller2/RegisterMember/'?>", { username: $('#idUsername').val(), password : $("input[name='password']").val()},  
+            			function(result){  
+		              		console.log(result);
+   					});*/
+
+
+			 	});
+
 			});
-
-
-
 
 			function initialize() {
 			  var mapOptions = {
@@ -234,7 +286,7 @@
 							</div>
 						</div>
 						<div class="field">
-							<div class="submit"><input type="submit" value="Register" class="sizesubmit"/></div>
+							<div class="submit"><input type="submit" value="Register" class="sizesubmit btnSubmit"/></div>
 						</div>
 						<br/><br/>
 					</form>

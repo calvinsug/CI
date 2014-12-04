@@ -60,9 +60,13 @@
 							<span><input type="password" name="password" class="textbox"/></span>
 						</div>
 						<br/><br/>
-						<div class="field">
+						<div class="field signin">
 							<div class="submit"><input type="submit" value="Sign In" class="sizesubmit"/></div>
 						</div>
+
+						<fb:login-button scope="public_profile,email" class="fblogin" style="margin:-10px 0 0 525px" onlogin="checkLoginState();">
+						</fb:login-button>
+
 						<br/><br/>
 					</form>
 					<br/>
@@ -155,19 +159,6 @@
   the JavaScript SDK to present a graphical Login button that triggers
   the FB.login() function when clicked.
 -->
-
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
-<div id="status">
-</div>
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
-
 			<div id="footer">
 				<div class="widget">
 					<img src="<?php echo base_url().'assets/images/facebook.png'?>"/>
@@ -175,6 +166,7 @@
 				</div>
 				<div>&copy; 2014 MyHomeIndonesia Rights Reserved</div>
 			</div>
+
 		</div>
 	</body>
 </html>

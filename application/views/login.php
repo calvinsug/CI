@@ -45,7 +45,7 @@
 			<br/><br/>
 			<div id="content">
 				<div class="form">
-					<form method="post" action="">
+					<form method="post" action=<?php echo base_url().'controller2/LoginMember/'?>  >
 						<div class="field">
 							<h2 align="center">Sign In My Home Indonesia</h2>
 							<hr/>

@@ -34,5 +34,14 @@ class Controller2 extends CI_Controller {
 		return $data;
 	}
 	
+	public function LoginMember(){
+		
+		$username= $_POST['username'];
+		$password = $_POST['password'];
+		
+		echo $username;
+		echo $password;
+
+	}
 
 }

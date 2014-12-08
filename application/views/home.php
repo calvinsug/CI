@@ -21,11 +21,11 @@
 							<span>IND</span>
 						</span>
 						<span class="submenuheader">
-							<span><a href="<?php echo base_url()."index.php/controller1/login"; ?> ">Sign In</a></span>
+							<span><a href="<?php echo base_url()."controller1/login"; ?> ">Sign In</a></span>
 						</span>
 						<span class="submenuheader">|</span>
 						<span class="submenuheader">
-							<span><a href="<?php echo base_url()."index.php/controller1/register"; ?> ">Register</a></span>
+							<span><a href="<?php echo base_url()."controller1/register"; ?> ">Register</a></span>
 						</span>
 					</div>
 				</div>
@@ -33,11 +33,11 @@
 			<div class="clear"></div>
 			<div class="menubar">
 				<ul>
-					<li><a href="<?php echo base_url()."index.php/controller1/index"; ?>" class="menulink">Home</a></li>
+					<li><a href="<?php echo base_url()."controller1/index"; ?>" class="menulink">Home</a></li>
 					<li><a href="#">List Events</a></li>
 					<li><a href="#">Testimony</a></li>
-					<li><a href="<?php echo base_url()."index.php/controller1/about"; ?>">About Us</a></li>
-					<li><a href="<?php echo base_url()."index.php/controller1/contact"; ?>">Contact Us</a></li>
+					<li><a href="<?php echo base_url()."controller1/about"; ?>">About Us</a></li>
+					<li><a href="<?php echo base_url()."controller1/contact"; ?>">Contact Us</a></li>
 				</ul>
 				<div class="search">
 					<input type="text" name="search"/>

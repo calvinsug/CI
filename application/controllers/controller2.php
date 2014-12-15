@@ -36,6 +36,16 @@ class Controller2 extends CI_Controller {
 	
 	public function LoginMember(){
 		
+		$this->load->model('Model_users');
+
+		$username = $this->Model_users->getUsers();
+
+
+		echo $username;
+        //$data['query'] = $this->model1->get();
+        
+        //$this->load->view('model1', $data);
+
 		$username= $_POST['username'];
 		$password = $_POST['password'];
 		

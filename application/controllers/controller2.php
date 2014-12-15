@@ -48,10 +48,44 @@ class Controller2 extends CI_Controller {
 
 		$username= $_POST['username'];
 		$password = $_POST['password'];
+
+
+
+
+
+		$_SESSION['Username'] = $username; 
 		
 		echo $username;
 		echo $password;
-
 	}
+
+	public function check_if_mail_exists($requested_email){
+
+		$this->load->model('Model_users');
+
+		$email_not_in_use = $this->Model_users->check_if_mail_exists($requested_email);	
+
+		if($email_not_in_use){
+			return TRUE;
+		}
+		else{
+			return FALSE;
+		}
+	}
+
+	public function check_if_username_exists($requested_username){
+
+		$this->load->model('Model_users');
+
+		$username_available = $this->Model_users->check_if_username_exists($requested_username);	
+
+		if($username_available){
+			return TRUE;
+		}
+		else{
+			return FALSE;
+		}
+	}
+ 
 
 }
